@@ -1,9 +1,23 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/home/Home';
+import Navbar from './components/Navbar';
 
 const App = () => {
     return (
         <>
-            <div>APP</div>
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="/home"
+                        element={<Home />}
+                    />
+                    <Route
+                        path="/navbar"
+                        element={<Navbar />}
+                    />
+                </Routes>
+            </BrowserRouter>
         </>
     );
 };
