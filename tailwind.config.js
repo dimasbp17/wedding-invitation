@@ -6,6 +6,9 @@ export default {
             colors: {
                 netral: '#FCF9F7',
             },
+            fontFamily: {
+                montaga: ['Montaga, serif'],
+            },
         },
     },
     plugins: [],
